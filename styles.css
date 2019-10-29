@@ -5,11 +5,12 @@ body{
   margin: 0px;
   background-color:#444;
   font-size: 18px;
+  background-image: url('./images/ocean.jpg') ;
 }
 body, a:link, a:visited, a:active{
   color: lightblue;
 }
-.title, .addDancerButton{
+.title, .addDancerButton, .addSquareDancer{
   padding:5px 12px;
   float:right;
 }
@@ -26,7 +27,35 @@ body, a:link, a:visited, a:active{
   position:absolute;
 }
 .squareDancer{
-  border:50px solid pink;
-  border-radius:10px;
+  border: 1px solid transparent;
+  /* border-radius:10px; */
   position:absolute;
+  animation: slide 2s linear;
+  height: 25px;
+  width: 50px;
+  background-image: url('http://i.imgur.com/NElj9j3.gif');
+  background-size: contain;
 }
+
+.ovalDancer{
+  border:30px solid blue;
+  border-radius:20px;
+  position:absolute;
+
+}
+
+@keyframes slide {
+  0% {
+    left: 0;
+    top: 0;
+  }
+  50% {
+    left: 244px;
+    top: 100px;
+  }
+  100% {
+    left: 488px;
+    top: 0;
+  }
+}
+

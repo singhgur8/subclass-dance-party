@@ -1,7 +1,8 @@
 var makeSquareDancer = function (top, left, timeBetweenSteps) {
 
   makeDancer.call(this, top, left, timeBetweenSteps);
-  this.$node = $('<span class = "squareDancer"></span>');
+  this.$node = $('<span class="squareDancer"></span>');
+  this.setPosition(top, left);
 };
 
 
@@ -14,8 +15,19 @@ makeSquareDancer.prototype.constructor = makeSquareDancer;
 
 makeSquareDancer.prototype.step = function () {
 
+
   makeDancer.prototype.step.call(this);
 
-  this.$node.slideUp();
-  this.$node.slideDown();
+  // this.$node.rotate();
+  this.$node.animate({
+    left: '+=35px',
+    right: '+=35px',
+  }
+  );
+  this.$node.animate({
+    left: '30px',
+    right: '30px'
+  }
+  );
+
 };
