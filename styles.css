@@ -22,40 +22,81 @@ body, a:link, a:visited, a:active{
   background-color: #777;
 }
 .dancer{
-  border:10px solid red;
-  border-radius:10px;
+  border:1px solid transparent;
+  border-radius:200px;
   position:absolute;
+  height: 125px;
+  width: 200px;
+  background-image: url('./images/dori.gif');
+  background-size: contain;
 }
 .squareDancer{
   border: 1px solid transparent;
-  /* border-radius:10px; */
+  border-radius:80px;
   position:absolute;
-  animation: slide 2s linear;
-  height: 25px;
-  width: 50px;
+  animation: shark 2s linear;
+  height: 125px;
+  width: 225px;
   background-image: url('http://i.imgur.com/NElj9j3.gif');
   background-size: contain;
 }
 
 .ovalDancer{
-  border:30px solid blue;
-  border-radius:20px;
+  border:1px solid transparent;
+  border-radius:80px;
   position:absolute;
+  height: 150px;
+  width: 150px;
+  background-image: url('./images/nemo.gif');
+  animation: slide 3s linear;
+  background-size: contain;
 
 }
 
 @keyframes slide {
   0% {
     left: 0;
-    top: 0;
+    top: 400px;
+  }
+  25%{
+    left:650px;
+    top:150px;
+
   }
   50% {
-    left: 244px;
-    top: 100px;
+    left: 1200px;
+    top: 420px;
+  }
+  75%{
+    left: 300px;
+    top:700px;
   }
   100% {
-    left: 488px;
-    top: 0;
+    left: 600px;
+    top: 450px;
   }
 }
 
+@keyframes shark {
+  0% {
+    left: 1294px;
+    top: 400px;
+  /* }
+  25%{
+    left:650px;
+    top:400px; */
+
+  }
+  50% {
+    left: 650px;
+    top: 420px;
+  }
+  /* 75%{
+    left: 300px;
+    top:700px;
+  } */
+  100% {
+    left: 0px;
+    top: 400px;
+  }
+}

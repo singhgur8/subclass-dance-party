@@ -35,6 +35,13 @@ makeDancer.prototype.setPosition = function (top, left) {
   this.$node.css(styleSettings);
 };
 
+makeDancer.prototype.lineUp = function () {
+  var position = {
+    top: '400px'
+  };
+  this.$node.css(position);
+};
+
 //makeDancer.prototype.setPosition.call(makeDancer, 15, 25);
 
 

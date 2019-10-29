@@ -20,8 +20,30 @@ makeOvalDancer.prototype.step = function () {
 
   // this.$node.rotate();
 
-  //could be like a heart beat
-  this.$node.fadeIn();
-  this.$node.fadeOut();
+  var topPos = (Math.random()) * 900;
+  var bottomPos = (Math.random()) * 1100;
+  var leftpos = (Math.random()) * 1200;
+  var rightpos = (Math.random()) * 900;
+
+  leftpos = String(leftpos) + 'px';
+  rightpos = String(rightpos) + 'px';
+  topPos = String(topPos) + 'px';
+  bottomPos = String(bottomPos) + 'px';
+
+  this.$node.animate({
+    left: leftpos,
+    right: rightpos,
+    top: topPos,
+    bottom: bottomPos,
+  }
+  );
+  this.$node.animate({
+    left: leftpos,
+    right: rightpos,
+    top: topPos,
+    bottom: bottomPos,
+  }
+  );
+
 
 };

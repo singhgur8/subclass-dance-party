@@ -18,15 +18,21 @@ makeSquareDancer.prototype.step = function () {
 
   makeDancer.prototype.step.call(this);
 
-  // this.$node.rotate();
+  var leftpos = (Math.random()) * 1200;
+  var rightpos = (Math.random()) * 900;
+
+  leftpos = String(leftpos) + 'px';
+  rightpos = String(rightpos) + 'px';
+
+
   this.$node.animate({
-    left: '+=35px',
-    right: '+=35px',
+    left: leftpos,
+    right: rightpos,
   }
   );
   this.$node.animate({
-    left: '30px',
-    right: '30px'
+    left: leftpos,
+    right: rightpos,
   }
   );
 
