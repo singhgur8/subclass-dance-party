@@ -67,5 +67,5 @@ makeDancer.prototype.setPosition = function (top, left) {
 // this one sets the position to some random default point within the body
 // dancer.setPosition(top, left);
 
-  // return dancer;
+// return dancer;
 // };
