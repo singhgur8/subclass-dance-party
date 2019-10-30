@@ -30,7 +30,7 @@ body, a:link, a:visited, a:active{
   background-image: url('./images/dori.gif');
   background-size: contain;
 }
-.squareDancer{
+.sharkDancer{
   border: 1px solid transparent;
   border-radius:80px;
   position:absolute;
@@ -41,39 +41,34 @@ body, a:link, a:visited, a:active{
   background-size: contain;
 }
 
-.ovalDancer{
+.nemoDancer{
   border:1px solid transparent;
   border-radius:80px;
   position:absolute;
-  height: 150px;
-  width: 150px;
+  height: 125px;
+  width: 125px;
   background-image: url('./images/nemo.gif');
-  animation: slide 3s linear;
+  animation: rotate 3s infinite;
   background-size: contain;
+
 
 }
 
-@keyframes slide {
+@keyframes rotate {
   0% {
-    left: 0;
-    top: 400px;
+    transform: rotate(72deg);
   }
   25%{
-    left:650px;
-    top:150px;
-
+    transform: rotate(144deg);
   }
   50% {
-    left: 1200px;
-    top: 420px;
+    transform: rotate(216deg);
   }
   75%{
-    left: 300px;
-    top:700px;
+    transform: rotate(288deg);
   }
   100% {
-    left: 600px;
-    top: 450px;
+    transform: rotate(360deg);
   }
 }
 

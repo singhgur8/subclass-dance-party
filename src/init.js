@@ -35,9 +35,19 @@ $(document).ready(function () {
 
   $('.addlineUpButton').on('click', function (event) {
     for (let i = 0; i < window.dancers.length; i++) {
-      window.dancers[i].lineUp();
+      //top is random
+      // var top = (Math.random()) * 900;
+      // top = '450px';
+      //left is incremented
+      var left = (i * 50) + 100;
+      left = String(left) + 'px';
+
+
+      window.dancers[i].lineUp(left);
     }
   });
+
+  //the nodes get create after so it does not recognize them so we need to put it somewhere where after the page is implemented
 
 });
 

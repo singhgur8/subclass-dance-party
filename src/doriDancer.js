@@ -1,5 +1,5 @@
-var makeBlinkyDancer = function (top, left, timeBetweenSteps) {
-  //var blinkyDancer = makeDancer(top, left, timeBetweenSteps);
+var makeDoriDancer = function (top, left, timeBetweenSteps) {
+  //var DoriDancer = makeDancer(top, left, timeBetweenSteps);
 
   makeDancer.call(this, top, left, timeBetweenSteps);
 
@@ -7,27 +7,27 @@ var makeBlinkyDancer = function (top, left, timeBetweenSteps) {
   // so we must keep a copy of the old version of this function
 
 
-  // blinkyDancer.step = function() {
+  // DoriDancer.step = function() {
   //   // call the old version of step at the beginning of any call to this new version of step
   //   oldStep();
   //   // toggle() is a jQuery method to show/hide the <span> tag.
   //   // See http://api.jquery.com/category/effects/ for this and
   //   // other effects you can use on a jQuery-wrapped html tag.
-  //   blinkyDancer.$node.toggle();
+  //   DoriDancer.$node.toggle();
   // };
   // var oldStep = this.step;
-  // return blinkyDancer;
+  // return DoriDancer;
 };
 
 
-makeBlinkyDancer.prototype = Object.create(makeDancer.prototype);
-makeBlinkyDancer.prototype.constructor = makeBlinkyDancer;
-// var oldStep = makeBlinkyDancer.prototype.step;
+makeDoriDancer.prototype = Object.create(makeDancer.prototype);
+makeDoriDancer.prototype.constructor = makeDoriDancer;
+// var oldStep = makeDoriDancer.prototype.step;
 
 
-//makeBlinkyDancer.prototype.step(this);
+//makeDoriDancer.prototype.step(this);
 
-makeBlinkyDancer.prototype.step = function () {
+makeDoriDancer.prototype.step = function () {
   // call the old version of step at the beginning of any call to this new version of step
 
   //oldStep.call(this);

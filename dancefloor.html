@@ -5,19 +5,27 @@
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <script src="lib/jquery.js"></script>
     <script src="src/dancer.js"></script>
-    <script src="src/blinkyDancer.js"></script>
-    <script src="src/sqaureDancer.js"></script>
-    <script src="src/ovalDancer.js"></script>
+    <script src="src/doriDancer.js"></script>
+    <script src="src/sharkDancer.js"></script>
+    <script src="src/nemoDancer.js"></script>
   </head>
   <body>
 
     <div class="topbar">
       <span class="title">Finding Nemo Dance Party</span>
-      <a href="#" class="addDancerButton" data-dancer-maker-function-name="makeBlinkyDancer">Add a Dori</a>
-      <a href="#" class="addDancerButton" id="square" data-dancer-maker-function-name="makeSquareDancer">Add a Shark</a>
-      <a href="#" class="addDancerButton" id="oval" data-dancer-maker-function-name="makeOvalDancer">Add a Nemo</a>
+      <a href="#" class="addDancerButton" id="dori" data-dancer-maker-function-name="makeDoriDancer">Add a Dori</a>
+      <a href="#" class="addDancerButton" id="shark" data-dancer-maker-function-name="makeSharkDancer">Add a Shark</a>
+      <a href="#" class="addDancerButton" id="nemo" data-dancer-maker-function-name="nemoDancer">Add a Nemo</a>
       <a href="#" class="addlineUpButton">Make the fish line up!</a>
     </div>
     <script src="src/init.js"></script>
+    <!-- <script>
+      $(document).ready(function() {
+        $('.nemoDancer').mouseover(function() {
+          console.log('this was activated');
+          // this.$node.fadeOut();
+        });
+      })
+    </script> -->
   </body>
 </html>
